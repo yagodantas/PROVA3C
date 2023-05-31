@@ -13,7 +13,7 @@
         <form>
          <input type="text" placeholder="digite seu email" id="e-mail"> <br><br>
          <input type="password" placeholder="digite sua senha" id="senha"> <br><br>
-         <input type="submit" onclick="logar(), return false">      
+         <input type="submit" onclick="logar(); return false">      
         </form>
     </div>
     <script>
@@ -22,8 +22,11 @@
             var senha = document.getElementById('senha').value;
             
             if(login =="yago" && senha =="abc"){
-            alert('login com sucesso')
-            location.href="inicio.html";
+            alert("login com sucesso");
+            window.location="inicio.html"    
+            }
+            else{
+                alert("erro login");
             }
         }
     </script> 
